@@ -1,0 +1,165 @@
+:root {
+    --primary: #00b3b3;
+    --minFontSize:10px;
+    --maxFontSize:20px;
+    --scaler:10vw;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*header*/
+
+header{
+    background-color: var(--primary);
+    padding: 30px;
+}
+
+h1{
+    text-align: center;
+}
+
+/*box1*/
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box1 > *{
+    padding-top: 25px;
+}
+
+/*box1-1*/
+
+.box1-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box1-1 img{
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    border-radius: 25px;
+}
+
+.box1-1 h2,p{
+    padding-top: 15px;
+}
+
+.box1-1 p{
+    color: #A9A9A9;
+}
+
+h2{
+    text-align: center;
+    color: #4E5150;
+}
+
+.box1-1 > p{
+    text-align: center;
+}
+
+/*box1-2*/
+
+.box1-2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.box1-2-1{
+    background-color:#E5E5E5;
+    padding: 15px;
+    border-radius: 25px;
+    width: 20%;
+    text-align: center;
+}
+
+.box1-2-1 p{
+    color: #BDBDBD;
+}
+
+h3{
+    color: #4E5150;
+}
+
+/*box2*/
+
+.box2{
+    padding: 30px 15px 30px 15px;
+}
+
+.box2 div img{
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+.img1{grid-area: img1;}
+.img2{grid-area: img2;}
+.img3{grid-area: img3;}
+.img4{grid-area: img4;}
+.img5{grid-area: img5;}
+.img6{grid-area: img6;}
+
+
+.box2{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    'img1 img2 img2'
+    'img3 img3 img4'
+    'img5 img6 img4';
+}
+
+
+/*footer*/
+
+footer{
+    margin-top: auto;
+    background-color: var(--primary);
+    padding: 30px;
+}
+
+footer p{
+    text-align: center;
+}
+
+/*
+*********************
+***RESPONSIVE FONT***
+*********************
+*/
+
+h1{
+    font-size: 6vw;
+}
+
+h2{
+    font-size: 5vw;
+}
+
+h3{
+    font-size: 4vw;
+}
+
+p{
+    font-size: 3vw;
+}
